@@ -1,5 +1,32 @@
 export function renderModals() {
     return `
+        <!-- Preoperacional IA Modal (Coming Soon) -->
+        <div id="preopIAModal" class="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 hidden items-center justify-center p-6">
+            <div class="bg-darkBg w-full max-w-sm rounded-3xl p-6 border border-white/10 shadow-2xl relative overflow-hidden">
+                <div class="absolute -top-12 -right-12 w-32 h-32 bg-purple-500/20 blur-2xl rounded-full"></div>
+                <div class="absolute -bottom-12 -left-12 w-32 h-32 bg-jungle/20 blur-2xl rounded-full"></div>
+                
+                <div class="relative">
+                    <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-purple-500/20 to-jungle/20 border border-white/10 flex items-center justify-center mb-4 mx-auto">
+                        <i class="fa-solid fa-robot text-2xl text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-jungle"></i>
+                    </div>
+                    
+                    <h3 class="text-xl font-bold text-white text-center mb-2 font-outfit">Preoperacional con IA</h3>
+                    <div class="inline-block px-3 py-1 bg-purple-500/20 border border-purple-500/30 rounded-full mb-4 mx-auto table">
+                        <span class="text-[10px] font-bold text-purple-300 uppercase tracking-widest"><i class="fa-solid fa-rocket mr-1"></i> Próximamente</span>
+                    </div>
+                    
+                    <p class="text-xs text-gray-400 text-center leading-relaxed mb-6">
+                        Estamos entrenando nuestra IA para realizar inspecciones visuales automáticas. Podrás revisar llantas, luces, vidrios y el kit de carretera con solo tomar una foto.
+                    </p>
+                    
+                    <button onclick="document.getElementById('preopIAModal').classList.add('hidden'); document.getElementById('preopIAModal').classList.remove('flex');" class="w-full py-3.5 bg-white/5 hover:bg-white/10 border border-white/10 rounded-xl text-white font-bold text-sm transition-colors">
+                        Entendido
+                    </button>
+                </div>
+            </div>
+        </div>
+
         <!-- ================= MODAL DE CAMARA IA ================= -->
         <div id="cameraModal" class="fixed inset-0 bg-gray-900/95 z-50 hidden flex-col justify-center items-center p-4 backdrop-blur-sm">
             <div class="bg-white rounded-[2rem] w-full max-w-sm sm:max-w-lg lg:max-w-xl overflow-hidden shadow-2xl flex flex-col max-h-[95vh]">

@@ -472,6 +472,16 @@ window.appActions = {
 
         showNotification("No se pudo generar o enviar el reporte. Intenta de nuevo.");
     }
+,
+    showPreopIAModal: () => {
+        const modal = document.getElementById('preopIAModal');
+        if (modal) {
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+        } else {
+            showNotification("La funcionalidad de Preoperacional IA no está disponible en este momento.");
+        }
+    }
 };
 
 // Map original HTML onclicks to appActions
